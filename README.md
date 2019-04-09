@@ -8,7 +8,7 @@
 
 # react-wyre
 
-> [React](https://facebook.github.io/react/) component for the [wyre](https://www.sendwyre.com/) widget.
+> [React](https://facebook.github.io/react/) component for the [Wyre](https://www.sendwyre.com/) embeddable widget.
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/archanova/react-wyre/master/LICENSE)
 [![Build Status](https://travis-ci.org/archanova/react-wyre.svg?branch=master)](https://travis-ci.org/archanova/react-wyre)
