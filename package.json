@@ -1,15 +1,18 @@
 {
   "name": "react-wyre",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React component for the Wyre widget.",
   "main": "index.js",
   "scripts": {
-    "prepublish": "babel --plugins transform-es2015-modules-umd src --ignore __tests__ --out-dir ./dist",
+    "prepublish": "npm run build",
+    "build": "npm run build:component && npm run build:example",
+    "build:component": "babel --plugins transform-es2015-modules-umd src --ignore __tests__ --out-dir ./dist",
+    "build:example": "browserify -t [ babelify --presets [ es2015 react ] ] example/index.js -o example/dist/bundle.js",
+    "watch:example": "watchify -t [ babelify --presets [ es2015 react ] ] example/index.js -o example/dist/bundle.js",
+    "lint": "standard src/index.js example/*.js",
+    "lint:fix": "standard --fix src/index.js example/*.js",
     "test": "echo TODO",
-    "coverage": "echo TODO",
-    "watch": "watchify -t [ babelify --presets [ es2015 react ] ] example/index.js -o example/dist/bundle.js",
-    "build": "browserify -t [ babelify --presets [ es2015 react ] ] example/index.js -o example/dist/bundle.js",
-    "lint:fix": "standard --fix src/index.js example/*.js"
+    "coverage": "echo TODO"
   },
   "dependencies": {
     "prop-types": "^15.7.2",

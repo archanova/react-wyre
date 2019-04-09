@@ -102,13 +102,6 @@
         }
       }
     }, {
-      key: 'handleClick',
-      value: function handleClick(event) {
-        event.preventDefault();
-        this.verifyWyre();
-        this.widget.open();
-      }
-    }, {
       key: 'componentWillReceiveProps',
       value: function componentWillReceiveProps(props) {
         if (JSON.stringify(this.props.config) !== JSON.stringify(props.config)) {
@@ -150,6 +143,12 @@
             _this2.props.onComplete(event);
           }
         });
+      }
+    }, {
+      key: 'handleClick',
+      value: function handleClick(event) {
+        event.preventDefault();
+        this.widget.open();
       }
     }, {
       key: 'open',

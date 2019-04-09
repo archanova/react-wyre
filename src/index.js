@@ -20,12 +20,6 @@ class Wyre extends React.Component {
     }
   }
 
-  handleClick (event) {
-    event.preventDefault()
-    this.verifyWyre()
-    this.widget.open()
-  }
-
   componentWillReceiveProps (props) {
     if (JSON.stringify(this.props.config) !== JSON.stringify(props.config)) {
       this.verifyWyre()
@@ -62,6 +56,11 @@ class Wyre extends React.Component {
         this.props.onComplete(event)
       }
     })
+  }
+
+  handleClick (event) {
+    event.preventDefault()
+    this.widget.open()
   }
 
   open () {
