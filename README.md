@@ -1,3 +1,11 @@
+<h3 align="center">
+  <br />
+  <img src="https://user-images.githubusercontent.com/168240/55785987-3d1e3800-5a68-11e9-9c5f-5c06a0c40747.png" alt="logo" width="500" />
+  <br />
+  <br />
+  <br />
+</h3>
+
 # react-wyre
 
 > [React](https://facebook.github.io/react/) component for the [wyre](https://www.sendwyre.com/) widget.
